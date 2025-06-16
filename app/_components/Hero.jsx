@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './Header'
+import Link from 'next/link'
 
 function Hero() {
   return (
@@ -21,12 +22,9 @@ function Hero() {
           </p>
 
           <div className="mt-4 flex justify-center gap-4 sm:mt-6">
-            <a
-            className="inline-block rounded border border-[#0f52ff] bg-[#0f52ff] px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-[#002ccd]"
-            href="#"
-            >
-            Start Tracking Now
-            </a>
+            <Link href="/dashboard" className="inline-block rounded border border-[#0f52ff] bg-[#0f52ff] px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-[#002ccd]">
+                Start Tracking Now
+            </Link>
           </div>
         </div>
       </div>
